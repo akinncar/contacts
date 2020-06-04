@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB3084BC24886752002A4127 /* ContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3084BB24886752002A4127 /* ContactsListViewController.m */; };
 		BB4524E124847B160048A789 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4524E024847B160048A789 /* AppDelegate.m */; };
 		BB4524E424847B160048A789 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4524E324847B160048A789 /* ViewController.m */; };
 		BB4524E724847B160048A789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4524E524847B160048A789 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB3084BA24886752002A4127 /* ContactsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsListViewController.h; sourceTree = "<group>"; };
+		BB3084BB24886752002A4127 /* ContactsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsListViewController.m; sourceTree = "<group>"; };
 		BB4524DC24847B160048A789 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4524DF24847B160048A789 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB4524E024847B160048A789 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				BB4524E024847B160048A789 /* AppDelegate.m */,
 				BB4524E224847B160048A789 /* ViewController.h */,
 				BB4524E324847B160048A789 /* ViewController.m */,
+				BB3084BA24886752002A4127 /* ContactsListViewController.h */,
+				BB3084BB24886752002A4127 /* ContactsListViewController.m */,
 				BB4525112484868F0048A789 /* Contact.h */,
 				BB4525122484868F0048A789 /* Contact.m */,
 				BB4524E524847B160048A789 /* Main.storyboard */,
@@ -269,6 +274,7 @@
 			files = (
 				BB4525132484868F0048A789 /* Contact.m in Sources */,
 				BB4524E424847B160048A789 /* ViewController.m in Sources */,
+				BB3084BC24886752002A4127 /* ContactsListViewController.m in Sources */,
 				BB4524EF24847B180048A789 /* main.m in Sources */,
 				BB4524E124847B160048A789 /* AppDelegate.m in Sources */,
 			);

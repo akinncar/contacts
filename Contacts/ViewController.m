@@ -11,7 +11,18 @@
 
 @implementation ViewController
 
--(IBAction) add {
+-(id)initWithCoder: (NSCoder *) aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        UIBarButtonItem *botao = [[UIBarButtonItem alloc] initWithTitle:@"Adicionar" style:UIBarButtonItemStylePlain target:self action:@selector(add)];
+        self.navigationItem.rightBarButtonItem = botao;
+        self.navigationItem.title = @"Novo Contato";
+    }
+    return self;
+
+}
+
+-(void) add {
     Contact *contact = [Contact new];
     
     contact.nome = self.nome.text;
@@ -21,6 +32,8 @@
     contact.site = self.site.text;
     
     NSLog(@"Clicou no botão %@ %@ %@ %@ %@", contact.nome, contact.endereco, contact.email, contact.telefone, contact.site);
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
