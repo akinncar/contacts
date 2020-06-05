@@ -16,5 +16,7 @@
 @property IBOutlet UITextField *telefone;
 @property IBOutlet UITextField *site;
 
+@property NSMutableArray *contacts;
+
 @end
 

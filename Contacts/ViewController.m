@@ -19,7 +19,6 @@
         self.navigationItem.title = @"Novo Contato";
     }
     return self;
-
 }
 
 -(void) add {
@@ -31,7 +30,9 @@
     contact.telefone = self.telefone.text;
     contact.site = self.site.text;
     
-    NSLog(@"Clicou no botão %@ %@ %@ %@ %@", contact.nome, contact.endereco, contact.email, contact.telefone, contact.site);
+    [self.contacts addObject:contact];
+    
+    NSLog(@"%@", self.contacts);
     
     [self.navigationController popViewControllerAnimated:YES];
 }

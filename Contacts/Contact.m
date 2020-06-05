@@ -10,4 +10,9 @@
 
 @implementation Contact
 
+- (NSString *) description {
+    NSString *dados = [NSString stringWithFormat:@"Nome: %@", self.nome];
+    return dados;
+}
+
 @end
