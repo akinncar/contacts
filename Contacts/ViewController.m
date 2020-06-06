@@ -11,17 +11,18 @@
 
 @implementation ViewController
 
--(id)initWithCoder: (NSCoder *) aDecoder {
+- (id)initWithCoder: (NSCoder *) aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         UIBarButtonItem *botao = [[UIBarButtonItem alloc] initWithTitle:@"Adicionar" style:UIBarButtonItemStylePlain target:self action:@selector(add)];
         self.navigationItem.rightBarButtonItem = botao;
         self.navigationItem.title = @"Novo Contato";
+        self.dao = [ContactDao contactDaoInstance];
     }
     return self;
 }
 
--(void) add {
+- (void) add {
     Contact *contact = [Contact new];
     
     contact.nome = self.nome.text;
@@ -30,9 +31,9 @@
     contact.telefone = self.telefone.text;
     contact.site = self.site.text;
     
-    [self.contacts addObject:contact];
+    [self.dao addContact:contact];
     
-    NSLog(@"%@", self.contacts);
+    NSLog(@"%@", self.dao.contacts);
     
     [self.navigationController popViewControllerAnimated:YES];
 }

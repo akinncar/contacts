@@ -12,7 +12,7 @@
 
 @implementation ContactsListViewController
 
--(id) init {
+- (id) init {
     self = [super init];
     
     if (self) {
@@ -20,37 +20,35 @@
         
         self.navigationItem.rightBarButtonItem = botaoForm;
         self.navigationItem.title = @"Contatos";
-        self.contacts = [NSMutableArray new];
+        self.dao = [ContactDao contactDaoInstance];
     }
     
     return self;
 }
 
--(void) exibeFormulario {
+- (void) exibeFormulario {
 //    ViewController *form = [ViewController new];
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController *form = [storyBoard instantiateViewControllerWithIdentifier:@"Contact-Form"];
-    
-    form.contacts = self.contacts;
+//    form.dao = self.dao;
     
     [self.navigationController pushViewController:form animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.contacts.count;
+    return [self.dao total];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString *identificador = @"Celula";
-    
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identificador];
     
     if(!cell) {
          cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identificador];
     }
     
-    Contact *contact = self.contacts[indexPath.row];
+    Contact *contact = [self.dao contactIndex: indexPath.row];
     cell.textLabel.text = contact.nome;
     
     return cell;

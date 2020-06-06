@@ -17,6 +17,7 @@
 		BB4524F924847B180048A789 /* ContactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4524F824847B180048A789 /* ContactsTests.m */; };
 		BB45250424847B190048A789 /* ContactsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB45250324847B190048A789 /* ContactsUITests.m */; };
 		BB4525132484868F0048A789 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4525122484868F0048A789 /* Contact.m */; };
+		BBA017E3248C447800648A06 /* ContactDao.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA017E2248C447800648A06 /* ContactDao.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		BB45250524847B190048A789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB4525112484868F0048A789 /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		BB4525122484868F0048A789 /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		BBA017E1248C447800648A06 /* ContactDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDao.h; sourceTree = "<group>"; };
+		BBA017E2248C447800648A06 /* ContactDao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDao.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				BB4524E324847B160048A789 /* ViewController.m */,
 				BB3084BA24886752002A4127 /* ContactsListViewController.h */,
 				BB3084BB24886752002A4127 /* ContactsListViewController.m */,
+				BBA017E1248C447800648A06 /* ContactDao.h */,
+				BBA017E2248C447800648A06 /* ContactDao.m */,
 				BB4525112484868F0048A789 /* Contact.h */,
 				BB4525122484868F0048A789 /* Contact.m */,
 				BB4524E524847B160048A789 /* Main.storyboard */,
@@ -275,6 +280,7 @@
 				BB4525132484868F0048A789 /* Contact.m in Sources */,
 				BB4524E424847B160048A789 /* ViewController.m in Sources */,
 				BB3084BC24886752002A4127 /* ContactsListViewController.m in Sources */,
+				BBA017E3248C447800648A06 /* ContactDao.m in Sources */,
 				BB4524EF24847B180048A789 /* main.m in Sources */,
 				BB4524E124847B160048A789 /* AppDelegate.m in Sources */,
 			);
